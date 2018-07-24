@@ -1,1 +1,47 @@
+@import "sec-a";
+@import "text";
+@import "variable";
+/*--------------------   Mother   --------------------*/
+body {
+  width: 100%;
+}
+/*--------------------   Mother   --------------------*/
+/*--------------------   Header   --------------------*/
+header {
+  width: 100%;
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  button,
+  input {
+    height: 50px;
+  }
+
+  h1,
+  h4 {
+    text-align: center;
+    margin: auto;
+  }
+}
+/*--------------------   Header   --------------------*/
+/*--------------------   Main   --------------------*/
+section {
+  a {
+    @include sec-a;
+  }
+
+  p {
+    @include text;
+  }
+}
+/*--------------------   Main   --------------------*/
+/*--------------------   Footer   --------------------*/
+/*--------------------   Footer   --------------------*/

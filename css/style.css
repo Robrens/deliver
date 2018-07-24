@@ -1,2 +1,2 @@
-
+body{width:100%}header{width:100%}header nav{display:flex;justify-content:space-between;margin:0 3%}header li{display:inline-block}header button,header input{height:50px}header h1,header h4{text-align:center;margin:auto}section a{color:#7EA2F0;text-transform:capitalize;padding:1rem;background-color:white;border:1px solid black;border-radius:5px}section p{color:black;text-align:left}
 /*# sourceMappingURL=style.css.map */
