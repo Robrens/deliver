@@ -3,45 +3,104 @@
 @import "variable";
 /*--------------------   Mother   --------------------*/
 body {
-  width: 100%;
+      width: 100%;
 }
 /*--------------------   Mother   --------------------*/
 /*--------------------   Header   --------------------*/
 header {
-  width: 100%;
+      width: 100%;
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 3%;
-  }
+      nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 3%;
+      }
 
-  li {
-    display: inline-block;
-  }
+      li {
+            display: inline-block;
+      }
 
-  button,
-  input {
-    height: 50px;
-  }
+      button {
+            height: 50px;
+            margin-left: 50%;
+      }
 
-  h1,
-  h4 {
-    text-align: center;
-    margin: auto;
-  }
+      input {
+            height: 50px;
+            margin: 2em 1em 0 45%;
+      }
+
+      h1,
+      h4 {
+            text-align: center;
+            margin: auto;
+      }
 }
 /*--------------------   Header   --------------------*/
 /*--------------------   Main   --------------------*/
-section {
-  a {
-    @include sec-a;
-  }
+main {
+      .left {
+            margin-left: 70%;
+      }
 
-  p {
-    @include text;
-  }
+      .right {
+            margin-left: 10%;
+      }
+
+      section {
+            width: 20%;
+
+            a {
+                  @include sec-a;
+                  margin: 2em 0;
+            }
+
+            p {
+                  @include text;
+                  margin-bottom: 2em;
+            }
+      }
+
+      article {
+            width: 70%;
+            margin-left: 10%;
+
+            h2 {
+                  margin-top: 5em;
+            }
+
+            p {
+                  width: 15%;
+                  display: inline-block;
+            }
+
+            button {
+                  @include sec-a;
+                  color: white;
+                  background-color: $green;
+            }
+      }
 }
 /*--------------------   Main   --------------------*/
 /*--------------------   Footer   --------------------*/
-/*--------------------   Footer   --------------------*/
+footer {
+      margin-top: 5em;
+
+      nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 3%;
+      }
+
+      li {
+            display: inline-block;
+      }
+      #chevre {
+          display: flex;
+          justify-content: space-around;
+
+          li {
+              display: inline-block;
+          }
+      }
+}
